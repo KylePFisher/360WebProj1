@@ -129,7 +129,6 @@ header
    margin-right: 6rem;
 }
 
-
 nav li
 {
    display: inline-block;
@@ -153,6 +152,14 @@ h1
    font-size: 2.0rem;
    margin-top: 1.4rem;
    margin-bottom: 0.5rem;
+}
+
+h1.hideBanner {
+  /*width: 864px; */
+  /*height: 151px;*/
+  background: url("../Images/Cornfed banner5.png");
+  background-repeat: no-repeat;
+  text-indent: -9999px;
 }
 
 h2{
@@ -182,3 +189,84 @@ footer
    margin-top: 1rem;
    padding: 0.7rem;
 }
+
+/*Media query starts here*/
+@media only screen and (max-width: 1000px)
+{
+#wrapper{width: 100%; margin: 0px;}
+
+
+h1
+{
+   font-size: 2rem;
+   font-family: times new roman, serif;
+   text-align: center;
+}
+
+h1.hideBanner {
+  width: auto; 
+  height: auto;
+  background: none;
+  text-indent: 0px;
+}
+
+header img
+{
+   display: none;
+   
+}
+
+.homepage-links-container
+{
+   margin: auto;
+   height: auto;
+   width: auto;
+}
+
+
+.homepage-links-container ul
+{
+   display: block;
+}
+
+.homepage-links-container li
+{
+   display: block;
+   font-size: 1rem;
+   text-align: center;
+   
+   height: auto;
+   width: auto;
+}
+
+#navbarwrapper
+{
+   margin:0;
+   padding: 0;
+   border-width: 0 0 0px 0px;
+}
+
+#navbarwrapper ul
+{
+   margin:0;
+   padding: 0;
+   border-width: 0 0 0px 0px;
+}
+
+#navbarwrapper li
+{
+   display: block;
+   font-size: 0.8rem;
+   border: 0 solid black;
+   height: auto;
+   width: auto;
+}
+
+#sitewrapper
+{
+   margin-left: 0rem; 
+   margin-right: 0rem;
+}
+
+}
+/*Media query ends here*/
