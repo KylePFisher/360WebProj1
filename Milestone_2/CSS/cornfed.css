@@ -6,8 +6,8 @@ Jan 2 2017 */
 
 html
 {
-   font-family: arial;
-    height: 100%;
+   font-family: arial, sans-serif;
+   height: 100%;
 }
 
 header, nav, main, footer 
@@ -15,6 +15,7 @@ header, nav, main, footer
    display: block;
 }
 
+/*This is what goes around everything in the site, including the header and footer*/
 #sitewrapper
 {
    margin-left: 6rem; 
@@ -30,16 +31,12 @@ header, nav, main, footer
     background: linear-gradient(#6495ED, #FFFFFF);
 }
 
+/*Body wrapper*/
 #contentwrapper
 {
    margin-left: 6rem; 
    margin-right: 6rem;
    /*background-color: #DEDEDE;*/
-}
-
-#navbarwrapper
-{
-      /*background-color: #6495ED;*/
 }
 
 #navbarwrapper ul
@@ -48,7 +45,7 @@ header, nav, main, footer
       padding: 0;
       
       border: 0 solid black;
-    border-width: 0 0 0px 1px;
+      border-width: 0 0 0px 1px;
 }
 
 #navbarwrapper li
@@ -56,16 +53,17 @@ header, nav, main, footer
    display: inline-block;
    font-size: 0.8rem;
    border: 0 solid black;
-    border-width: 1px 1px 1px 0;
-    padding:.5em;
+   border-width: 1px 1px 1px 0;
+   padding:.5em;
    background-color: #FFF;
    text-align: center;
-   /*line-height: 48px;*/
    
-    width: 6.85rem;
-    height: 1.5rem;
+   width: 6.85rem;
+   height: 1.5rem;
 }
 
+/*The basic layout of the site had a heading on each page,
+this applies to those heading*/
 #h1wrapper
 {
    border-bottom: 3px solid black;
@@ -73,6 +71,8 @@ header, nav, main, footer
    padding-bottom: 0rem;
 }
 
+/*The following class rules applu specifically to the homepage boxes, 
+which took a lot of css trickery to get them to function like the prototype*/
 .homepage-links-container
 {
    width: 657px;
@@ -97,15 +97,15 @@ header, nav, main, footer
    font-size: 1.2rem;
    margin-top: .8rem;
    margin-bottom: .8rem;
-   /*padding: 2rem;*/
    background-color: #FFF;
    text-align: center;
    line-height: 114px;
    
-    width: 178px;
-    height: 114px;
+   width: 178px;
+   height: 114px;
 }
 
+/*This class is specifically for the events page*/
 .event
 {
    border-bottom: 3px solid black;
@@ -120,11 +120,6 @@ p
 
 header
 {
-   margin: 0;
-   padding: 0;
-   font-size: 100%;
-   vertical-align: baseline;
-   border: 0;
    margin-left: 6rem; 
    margin-right: 6rem;
 }
@@ -136,15 +131,15 @@ nav li
 
 a { text-decoration: none; padding: 0em;}
 a:link { color: #000; }
-a:visited { color: #000; }
+a:visited { color: purple; }
 a:hover { color: #9BB6E6; }
 a:active{ color: #0000FF; }
 
 nav ul 
 { 
    list-style-type: none;
-    margin: 0px;
-    padding-left: 0; 
+   margin: 0px;
+   padding-left: 0; 
 }
 
 h1 
@@ -154,9 +149,8 @@ h1
    margin-bottom: 0.5rem;
 }
 
-h1.hideBanner {
-  /*width: 864px; */
-  /*height: 151px;*/
+h1.hideBanner 
+{
   background: url("../Images/Cornfed banner5.png");
   background-repeat: no-repeat;
   text-indent: -9999px;
@@ -170,7 +164,6 @@ h2{
 
 body
 {
-   /*background: linear-gradient(#DEDEDE, #FFFFFF);*/
     background: linear-gradient(#9BB6E6, #DEDEDE);
     
     height: 100%;
@@ -208,6 +201,12 @@ h1.hideBanner {
   height: auto;
   background: none;
   text-indent: 0px;
+}
+
+header
+{
+   margin-left: 0rem; 
+   margin-right: 0rem;
 }
 
 header img
