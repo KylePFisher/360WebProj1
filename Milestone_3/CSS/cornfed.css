@@ -80,7 +80,7 @@ when the user enters empty values via javascript*/
    color: red;
 }
 
-#failedContactSubmission
+.failedContactSubmission
 {
    display: none;
    padding-left: 1rem;
