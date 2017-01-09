@@ -20,7 +20,7 @@ function validateContact() {
     var comments = document.forms["contactUsForm"]["comments"].value;
     
     var phoneRegex = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
-    var emailRegex = /^[a-z0-9]+@[a-z0-9]+\.[a-z]{3}$/;
+    var emailRegex = /^[a-z0-9]+@[a-z0-9]+\.[a-z]$/;
     var commentsRegex = /^.{1,250}$/;
 
     var i;
