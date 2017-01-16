@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cornfed Coworking - Sign In</title>
+        <link rel="stylesheet" href="../CSS/reset.css" media="screen">
+        <link rel="stylesheet" href="../CSS/cornfed.css" media="screen">
+    </head>
+    
+    <body>
+    <!-- 
+     Kyle Fisher
+     Final Project, Milestone 2
+     INFO 2900 6A
+     Brown, McCune, Paschall, Rosas 
+     1/15/17
+    -->
+    <div id="sitewrapper">
+        <div id="headerwrapper">
+        <header>
+            <h1 class="hideBanner">Cornfed Coworking
+                <img src="../Images/Cornfed banner4.png" alt="Cornfed Coworking Banner" width="864" height="151">
+            </h1>
+            <div id="navbarwrapper">
+            <nav>
+                <ul>
+                    <a href="default.html"><li>Home</li></a
+                    ><a href="about us.html"><li>About Us</li></a
+                    ><a href="faq.html"><li>FAQ</li></a
+                    ><a href="getting involved.html"><li>Getting Involved</li></a
+                    ><a href="events.html"><li>Events</li></a
+                    ><a href="contact us.html"><li>Contact Us</li></a
+                    ><a href="sign in.html"><li>Sign-In</li></a>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        </div>
+        <div id="contentwrapper">
+        <main>
+            <div id="h1wrapper">
+            <h1>Sign-In Page</h1>
+            </div>
+            
+            <form name="sign-in" id="sign-in" action="#" onsubmit="return validateSignIn()" method="post">
+                <label for="userName">Username:</label>
+                <input type="text" required name="uName" id="uName" value="" tabindex="1" />
+                 
+                <label for="passWord">Password:</label>
+                <input type="password" required name="passWord" id="passWord" value="" tabindex="2" />
+                 
+                <input type="submit" value="Submit" tabindex="3"/>
+            </form>
+            <p id="failedSignIn">Please fill the required fields</p>
+        </main>
+        </div>
+        <footer>
+            <a href="default.html">Home</a> |
+            <a href="contact us.html">Contact Us</a> |
+            <a href="faq.html">FAQ</a> |
+            Copyright &copy; Cornfed Coworking 2016
+        </footer>
+    </div>
+    
+    <script src="../JavaScript/validation.js"></script>
+                
+    </body>
+</html>

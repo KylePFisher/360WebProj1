@@ -1,0 +1,293 @@
+/* Kyle Fisher
+reset.css
+INFO 2900 6A
+Brown, McCune, Paschall, Rosas
+Jan 2 2017 */
+
+html
+{
+   font-family: arial, sans-serif;
+   height: 100%;
+}
+
+header, nav, main, footer 
+{ 
+   display: block;
+}
+
+/*This is what goes around everything in the site, including the header and footer*/
+#sitewrapper
+{
+   margin-left: 6rem; 
+   margin-right: 6rem;
+   /*background-color: #DEDEDE;*/
+    background: linear-gradient(#DEDEDE, #FFFFFF);
+}
+
+#headerwrapper
+{
+   /*text-align: center;*/
+   /*background-color: #6495ED;*/
+    background: linear-gradient(#6495ED, #FFFFFF);
+}
+
+/*Body wrapper*/
+#contentwrapper
+{
+   margin-left: 6rem; 
+   margin-right: 6rem;
+   /*background-color: #DEDEDE;*/
+}
+
+#navbarwrapper ul
+{
+      margin:0;
+      padding: 0;
+      
+      border: 0 solid black;
+      border-width: 0 0 0px 1px;
+}
+
+#navbarwrapper li
+{
+   display: inline-block;
+   font-size: 0.8rem;
+   border: 0 solid black;
+   border-width: 1px 1px 1px 0;
+   padding:.5em;
+   background-color: #FFF;
+   text-align: center;
+   
+   width: 6.85rem;
+   height: 1.5rem;
+}
+
+/*The basic layout of the site had a heading on each page,
+this applies to those headings*/
+#h1wrapper
+{
+   border-bottom: 3px solid black;
+   margin-bottom: 1rem;
+   padding-bottom: 0rem;
+}
+
+/*This is the paragraph under the form on the sign-in page that displays 
+when the user enters empty values via javascript*/
+#failedSignIn
+{
+   display: none;
+   padding-left: 1rem;
+   color: red;
+}
+
+.failedContactSubmission
+{
+   display: none;
+   padding-left: 1rem;
+   color: red;
+}
+
+/*The following class rules applu specifically to the homepage boxes, 
+which took a lot of css trickery to get them to function like the prototype*/
+.homepage-links-container
+{
+   width: 657px;
+   height: 340px;
+   margin: auto;
+}
+
+
+.homepage-links-container ul
+{
+   list-style-type: none;
+   margin: 0px;
+   padding-left: 0;
+   
+   display: block;
+}
+
+.homepage-links-container li
+{
+   display: inline-block;
+   border: 1px solid black;
+   font-size: 1.2rem;
+   margin-top: .8rem;
+   margin-bottom: .8rem;
+   background-color: #FFF;
+   text-align: center;
+   line-height: 114px;
+   
+   width: 178px;
+   height: 114px;
+}
+
+/*This class is specifically for the events page*/
+.event
+{
+   border-bottom: 3px solid black;
+   margin-bottom: 1rem;
+}
+
+p 
+{
+   margin-bottom: 1rem;
+   padding-bottom: 0rem;
+}
+
+form p {
+   margin-bottom: 0;
+   padding: 0rem;
+}
+
+header
+{
+   margin-left: 6rem; 
+   margin-right: 6rem;
+}
+
+nav li
+{
+   display: inline-block;
+}
+
+a { text-decoration: none; padding: 0em;}
+a:link { color: #000; }
+a:visited { color: purple; }
+a:hover { color: #9BB6E6; }
+a:active{ color: #0000FF; }
+
+nav ul 
+{ 
+   list-style-type: none;
+   margin: 0px;
+   padding-left: 0; 
+}
+
+h1 
+{
+   font-size: 2.0rem;
+   margin-top: 1.4rem;
+   margin-bottom: 0.5rem;
+}
+
+h1.hideBanner 
+{
+  background: url("../Images/Cornfed banner5.png");
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+
+h2
+{
+   font-size: 1.4rem;
+   margin-top: 0.3rem;
+   margin-bottom: 0.3rem;
+}
+
+body
+{
+    background: linear-gradient(#9BB6E6, #DEDEDE);
+    
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+footer
+{
+   text-align: center;
+   font-size: .9rem;
+   background-color: #FFF;
+   
+   border-top: 1px solid black;
+   margin-top: 1rem;
+   padding: 0.7rem;
+}
+
+/*Media query starts here*/
+@media only screen and (max-width: 1000px)
+{
+#wrapper{width: 100%; margin: 0px;}
+
+
+h1
+{
+   font-size: 2rem;
+   font-family: times new roman, serif;
+   text-align: center;
+}
+
+h1.hideBanner {
+  width: auto; 
+  height: auto;
+  background: none;
+  text-indent: 0px;
+}
+
+header
+{
+   margin-left: 0rem; 
+   margin-right: 0rem;
+}
+
+header img
+{
+   display: none;
+   
+}
+
+.homepage-links-container
+{
+   margin: auto;
+   height: auto;
+   width: auto;
+}
+
+
+.homepage-links-container ul
+{
+   display: block;
+}
+
+.homepage-links-container li
+{
+   display: block;
+   font-size: 1rem;
+   text-align: center;
+   
+   height: auto;
+   width: auto;
+}
+
+#navbarwrapper
+{
+   margin:0;
+   padding: 0;
+   border-width: 0 0 0px 0px;
+}
+
+#navbarwrapper ul
+{
+   margin:0;
+   padding: 0;
+   border-width: 0 0 0px 0px;
+}
+
+#navbarwrapper li
+{
+   display: block;
+   font-size: 0.8rem;
+   border: 0 solid black;
+   height: auto;
+   width: auto;
+}
+
+#sitewrapper
+{
+   margin-left: 0rem; 
+   margin-right: 0rem;
+}
+
+}
+/*Media query ends here*/
