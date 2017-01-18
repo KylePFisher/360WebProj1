@@ -6,5 +6,5 @@
     $_SESSION['telephone'] = $_POST['telephone'];
     $_SESSION['comments'] = $_POST['comments'];
     
-    header('Location: contact us view.php');
+    header('Location: contact-us-view.php');
 ?>

@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Cornfed Coworking - Home</title>
         <link rel="stylesheet" href="../CSS/reset.css" media="screen">
         <link rel="stylesheet" href="../CSS/cornfed.css" media="screen">
@@ -34,12 +34,12 @@
             
             <div class="homepage-links-container">
                 <ul>
-                    <a href="about us.php"><li>About Us</li></a>
-                    <a href="faq.php"><li>FAQ</li></a>
-                    <a href="getting involved.php"><li>Getting Involved</li></a>
-                    <a href="events.php"><li>Events</li></a>
-                    <a href="contact us.php"><li>Contact Us</li></a>
-                    <a href="sign in.php"><li>Sign-In</li></a>
+                    <li><a href="about us.php">About Us</a></li>
+                    <li><a href="faq.php">FAQ</a></li>
+                    <li><a href="getting involved.php">Getting Involved</a></li>
+                    <li><a href="events.php">Events</a></li>
+                    <li><a href="contact us.php">Contact Us</a></li>
+                    <li><a href="sign in.php">Sign-In</a></li>
                 </ul>
             </div>
             

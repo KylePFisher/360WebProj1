@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Cornfed Coworking - Getting Involved</title>
         <link rel="stylesheet" href="../CSS/reset.css" media="screen">
         <link rel="stylesheet" href="../CSS/cornfed.css" media="screen">

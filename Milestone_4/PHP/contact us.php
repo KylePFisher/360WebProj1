@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Cornfed Coworking - Contact Us</title>
         <link rel="stylesheet" href="../CSS/reset.css" media="screen">
         <link rel="stylesheet" href="../CSS/cornfed.css" media="screen">
@@ -24,7 +24,7 @@
             <div id="h1wrapper">
                 <h1>Contact Us</h1>
             </div>
-            <form name="contactUsForm" id="contactUs" action="contact us process.php" onsubmit="return validateContact()" method="POST">
+            <form name="contactUsForm" id="contactUs" action="contact-us-process.php" onsubmit="return validateContact()" method="POST">
             <fieldset>
                 <legend>Contact info</legend>
                 <p><label for="userName">Username:</label>
@@ -34,7 +34,7 @@
                 <input type="email"  name="email" id="email" value="" tabindex="2" /></p>
                 <br>
                 <p><label for="telephone">Telephone:</label>
-                <input type="phone"  name="telephone" id="telephone" value="" tabindex="3" /></p>
+                <input type="text"  name="telephone" id="telephone" value="" tabindex="3" /></p>
                 <br>
                 <p><label for="comments">Comments (Max 250 characters):</label><br>
                 <textarea name="comments" id="comments" cols="30" rows="3" tabindex="4"></textarea></p>
