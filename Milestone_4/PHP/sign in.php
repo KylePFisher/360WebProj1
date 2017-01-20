@@ -34,7 +34,9 @@
                  
                 <input type="submit" value="Submit" tabindex="3"/>
             </form>
-            <p id="failedSignIn">Please fill the required fields</p>
+            <div id="failedSignInSubmission">
+                
+            </div>
         </main>
         </div>
         <?php

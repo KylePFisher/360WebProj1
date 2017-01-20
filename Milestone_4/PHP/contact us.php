@@ -28,24 +28,23 @@
             <fieldset>
                 <legend>Contact info</legend>
                 <p><label for="userName">Username:</label>
-                <input type="text"  name="userName" id="userName" value="" tabindex="1" /></p>
+                <input type="text" required name="userName" id="userName" value="" tabindex="1" /></p>
                 <br>
                 <p><label for="email">Email:</label>
-                <input type="email"  name="email" id="email" value="" tabindex="2" /></p>
+                <input type="email" required name="email" id="email" value="" tabindex="2" /></p>
                 <br>
                 <p><label for="telephone">Telephone:</label>
-                <input type="text"  name="telephone" id="telephone" value="" tabindex="3" /></p>
+                <input type="text" required name="telephone" id="telephone" value="" tabindex="3" /></p>
                 <br>
                 <p><label for="comments">Comments (Max 250 characters):</label><br>
-                <textarea name="comments" id="comments" cols="30" rows="3" tabindex="4"></textarea></p>
+                <textarea name="comments" required id="comments" cols="30" rows="3" tabindex="4"></textarea></p>
                 <br>
                 <input type="submit" value="Submit" tabindex="5"/>
             </fieldset>
             </form>
-            <p class="failedContactSubmission">Please fill the required fields</p>
-            <p class="failedContactSubmission">Email not in proper format: "name@domain.com"</p>
-            <p class="failedContactSubmission">Phone number not in proper format: "402-111-2222"</p>
-            <p class="failedContactSubmission">Comments empty or too long.</p>
+            <div id="failedContactSubmission">
+                
+            </div>
     </main>
     </div>
         <?php
