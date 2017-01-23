@@ -20,15 +20,7 @@ function validateSignIn()
             errorDiv.removeChild(errorDiv.firstChild);
         }
         
-        //Shameless Copypaste from the createErrorParagraph method
-        var errorParagraph = document.createElement("p");
-            errorParagraph.className = "failedSubmissionError";
-        var errorParagraphContent =
-            document.createTextNode("Please fill every field");
-        
-        //Appending error message content to error message, and adding the error to the DOM
-            errorParagraph.appendChild(errorParagraphContent);
-            errorDiv.appendChild(errorParagraph);
+        createErrorParagraph("Please fill every field", "failedSignInSubmission");
         
         return false;
     }
@@ -38,10 +30,10 @@ function validateSignIn()
     }
 }
 
-function createErrorParagraph(message) 
+function createErrorParagraph(message, errorDivName) 
 {
     //Create a variable to hold the div that will contain error messages
-    var errorDiv = document.getElementById("failedContactSubmission");
+    var errorDiv = document.getElementById(errorDivName);
     
     //Code to create error message
     var errorParagraph = document.createElement("p");
@@ -60,10 +52,13 @@ function validateContact()
 {
     //Logging the method call because I suck at debugging Javascript otherwise
     console.log("Validate contact begins");
+    
     //Creating a variable to hold the div that will contain error messages
     var errorDiv = document.getElementById("failedContactSubmission");
+    
     //Defaulting submission to true, and setting it to false if anything goes wrong.
     var successfulSubmission = true;
+    
     //Initializing javascript variables with form variables
     var name = document.forms["contactUsForm"]["userName"].value;
     var email = document.forms["contactUsForm"]["email"].value;
@@ -83,7 +78,7 @@ function validateContact()
     
     //Code to handle empty values
     if (name == "" || email == "" || phone == "" || comments == "") {
-        createErrorParagraph("Please fill every field");
+        createErrorParagraph("Please fill every field", "failedContactSubmission");
         console.log("Empty values triggered");
         successfulSubmission = false;
     }
@@ -91,7 +86,8 @@ function validateContact()
     //Code to handle bad email formatting
     if (!email.match(emailRegex))
     {
-        createErrorParagraph("Email not in proper format: \"name@domain.com\"");
+        createErrorParagraph("Email not in proper format: \"name@domain.com\"",
+        "failedContactSubmission");
         console.log('Email triggered');
         successfulSubmission = false;
     }
@@ -99,7 +95,8 @@ function validateContact()
     //Code to handle bad cellphone formatting
     if (!phone.match(phoneRegex))
     {
-        createErrorParagraph("Phone number not in proper format: \"402-111-2222\"");
+        createErrorParagraph("Phone number not in proper format: \"402-111-2222\"",
+         "failedContactSubmission");
         console.log('Phone triggered');
         successfulSubmission = false;
     }
@@ -107,7 +104,7 @@ function validateContact()
     //Code to handle improper comment size
     if (!comments.match(commentsRegex))
     {
-        createErrorParagraph("Comments empty or too long.");
+        createErrorParagraph("Comments empty or too long.",  "failedContactSubmission");
         console.log('Comments triggered');
         successfulSubmission = false;
     }

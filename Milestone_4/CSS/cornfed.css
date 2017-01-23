@@ -50,11 +50,10 @@ header, nav, main, footer
 
 #navbarwrapper li
 {
-   display: inline-block;
-   font-size: 0.8rem;
+   font-size: .9rem;
    border: 0 solid black;
    border-width: 1px 1px 1px 0;
-   padding:.5em;
+   padding:.8rem .8rem .5rem .8rem;
    background-color: #FFF;
    text-align: center;
    
@@ -86,7 +85,7 @@ when the user enters empty values via javascript*/
    color: red;
 }
 
-/*The following class rules applu specifically to the homepage boxes, 
+/*The following class rules apply specifically to the homepage boxes, 
 which took a lot of css trickery to get them to function like the prototype*/
 .homepage-links-container
 {
@@ -210,15 +209,14 @@ footer
 {
 #wrapper{width: 100%; margin: 0px;}
 
-
 h1
 {
    font-size: 2rem;
-   font-family: times new roman, serif;
    text-align: center;
 }
 
-h1.hideBanner {
+h1.hideBanner 
+{
   width: auto; 
   height: auto;
   background: none;

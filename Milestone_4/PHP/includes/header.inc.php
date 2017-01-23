@@ -1,18 +1,18 @@
 <div id="headerwrapper">
     <header>
         <h1 class="hideBanner">Cornfed Coworking
-            <img src="../Images/Cornfed banner4.png" alt="Cornfed Coworking Banner" width="864" height="151"/>
+            <img src="../Images/Cornfed banner6.png" alt="Cornfed Coworking Banner" width="975" height="140"/>
         </h1>
         <div id="navbarwrapper">
         <nav>
             <ul>
-                <a href="default.php"><li>Home</li></a
-                ><a href="about us.php"><li>About Us</li></a
-                ><a href="faq.php"><li>FAQ</li></a
-                ><a href="getting involved.php"><li>Getting Involved</li></a
-                ><a href="events.php"><li>Events</li></a
-                ><a href="contact us.php"><li>Contact Us</li></a
-                ><a href="sign in.php"><li>Sign-In</li></a>
+                <li><a href="default.php">Home</a></li
+                ><li><a href="about us.php">About Us</a></li
+                ><li><a href="faq.php">FAQ</a></li
+                ><li><a href="getting involved.php">Getting Involved</a></li
+                ><li><a href="events.php">Events</a></li
+                ><li><a href="contact us.php">Contact Us</a></li
+                ><li><a href="sign in.php">Sign-In</a></li>
             </ul>
         </nav>
         </div>
