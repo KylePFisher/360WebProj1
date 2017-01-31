@@ -62,6 +62,7 @@
                 {
                     echo "<p class=\"failedSubmissionError\">Comments empty or too long</p>";
                 }
+                $_SESSION["errorList"] = NULL;
             ?>
             </div>
     </main>
