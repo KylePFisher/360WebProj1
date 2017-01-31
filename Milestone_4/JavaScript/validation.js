@@ -30,6 +30,8 @@ function validateSignIn()
     }
 }
 
+/*Addition in REV 2.0, dynamically adds a message in a <p> tag to whatever
+    error div is passed into it*/
 function createErrorParagraph(message, errorDivName) 
 {
     //Create a variable to hold the div that will contain error messages
@@ -48,6 +50,8 @@ function createErrorParagraph(message, errorDivName)
 }
 
 //REV 2.0 in Milestone 4
+/*Changed the script from accessing a predefined <p> tag to dynamically adding it
+    to a div element */
 function validateContact() 
 {
     //Logging the method call because I suck at debugging Javascript otherwise
@@ -67,7 +71,7 @@ function validateContact()
     
     //Putting expecting regex in a var just in case I want to change it
     var phoneRegex = /^[0-9]{3}-[0-9]{3}-[0-9]{4}$/;
-    var emailRegex = /^[a-z0-9]+@[a-z0-9]+\.[a-z]+$/;
+    var emailRegex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-z]+$/;
     var commentsRegex = /^.{1,250}$/;
     
     /*This removes every error message, so that
@@ -104,7 +108,7 @@ function validateContact()
     //Code to handle improper comment size
     if (!comments.match(commentsRegex))
     {
-        createErrorParagraph("Comments empty or too long.",  "failedContactSubmission");
+        createErrorParagraph("Comments empty or too long",  "failedContactSubmission");
         console.log('Comments triggered');
         successfulSubmission = false;
     }

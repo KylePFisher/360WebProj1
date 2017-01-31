@@ -24,26 +24,45 @@
             <div id="h1wrapper">
                 <h1>Contact Us</h1>
             </div>
+            <?php include("lib/server_side_validation.php"); session_start();?>
             <form name="contactUsForm" id="contactUs" action="contact-us-process.php" onsubmit="return validateContact()" method="POST">
             <fieldset>
                 <legend>Contact info</legend>
                 <p><label for="userName">Username:</label>
-                <input type="text" required name="userName" id="userName" value="" tabindex="1" /></p>
+                <input type="text"  name="userName" id="userName" value="<?php echo htmlspecialchars($_SESSION["userName"]); ?>" tabindex="1" /></p>
                 <br>
                 <p><label for="email">Email:</label>
-                <input type="email" required name="email" id="email" value="" tabindex="2" /></p>
+                <input type="email"  name="email" id="email" value="<?php echo htmlspecialchars($_SESSION["email"]); ?>" tabindex="2" /></p>
                 <br>
                 <p><label for="telephone">Telephone:</label>
-                <input type="text" required name="telephone" id="telephone" value="" tabindex="3" /></p>
+                <input type="text"  name="telephone" id="telephone" value="<?php echo htmlspecialchars($_SESSION["telephone"]); ?>" tabindex="3" /></p>
                 <br>
                 <p><label for="comments">Comments (Max 250 characters):</label><br>
-                <textarea name="comments" required id="comments" cols="30" rows="3" tabindex="4"></textarea></p>
+                <textarea name="comments"  id="comments" cols="30" rows="3" tabindex="4"></textarea></p>
                 <br>
                 <input type="submit" value="Submit" tabindex="5"/>
             </fieldset>
             </form>
             <div id="failedContactSubmission">
-                
+            <?php
+                $errorList = $_SESSION["errorList"];
+                if($errorList["emptyVals"])
+                {
+                    echo "<p class=\"failedSubmissionError\">Please fill every field</p>";
+                }
+                if($errorList["email"])
+                {
+                    echo "<p class=\"failedSubmissionError\">Email not in proper format: \"name@domain.com\"</p>";
+                }
+                if($errorList["telephone"])
+                {
+                    echo "<p class=\"failedSubmissionError\">Phone number not in proper format: \"402-111-2222\"</p>";
+                }
+                if($errorList["comments"])
+                {
+                    echo "<p class=\"failedSubmissionError\">Comments empty or too long</p>";
+                }
+            ?>
             </div>
     </main>
     </div>

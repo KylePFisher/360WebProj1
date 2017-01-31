@@ -28,12 +28,19 @@
                         <h1>Thank you for submitting your contact info!</h1>
                     </div>
                     <?php
-                    echo "<table>";
-                        echo "<tr><td>User Name:</td><td>" . $_SESSION['userName'] . "</td></tr>";
-                        echo "<tr><td>Email:</td><td>" . $_SESSION['email'] . "</td></tr>";
-                        echo "<tr><td>Telephone:</td><td>" . $_SESSION['telephone'] . "</td></tr>";
-                        echo "<tr><td>Comments:</td><td>" . $_SESSION['comments'] . "</td></tr>";
-                    echo "</table>";
+                    if ($_SESSION["contactUsSQLSuccessful"])
+                    {
+                        echo "<table>";
+                            echo "<tr><td>User Name:</td><td>" . $_SESSION['userName'] . "</td></tr>";
+                            echo "<tr><td>Email:</td><td>" . $_SESSION['email'] . "</td></tr>";
+                            echo "<tr><td>Telephone:</td><td>" . $_SESSION['telephone'] . "</td></tr>";
+                            echo "<tr><td>Comments:</td><td>" . $_SESSION['comments'] . "</td></tr>";
+                        echo "</table>";
+                    }
+                    else 
+                    {
+                        echo "<p class=\"failedSubmissionError\">There was an error with the submission, please try again within a few minutes.</p>";
+                    }
                     ?>
                 </main>
         </div>
