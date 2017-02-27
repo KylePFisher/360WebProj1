@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cornfed Coworking - Contact Us</title>
+        <link rel="stylesheet" href="../CSS/reset.css" media="screen">
+        <link rel="stylesheet" href="../CSS/cornfed.css" media="screen">
+    </head>
+    
+    <body>
+    <!-- 
+     Kyle Fisher
+     Final Project, Milestone 2
+     INFO 2900 6A
+     Brown, McCune, Paschall, Rosas 
+     1/15/17
+    -->
+    <div id="sitewrapper">
+        <div id="headerwrapper">
+        <header>
+            <h1 class="hideBanner">Cornfed Coworking
+                <img src="../Images/Cornfed banner4.png" alt="Cornfed Coworking Banner" width="864" height="151">
+            </h1>
+            <div id="navbarwrapper">
+            <nav>
+                <ul>
+                    <a href="default.html"><li>Home</li></a
+                    ><a href="about us.html"><li>About Us</li></a
+                    ><a href="faq.html"><li>FAQ</li></a
+                    ><a href="getting involved.html"><li>Getting Involved</li></a
+                    ><a href="events.html"><li>Events</li></a
+                    ><a href="contact us.html"><li>Contact Us</li></a
+                    ><a href="sign in.html"><li>Sign-In</li></a>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        </div>
+        <div id="contentwrapper">
+        <main>
+            <div id="h1wrapper">
+            <h1>Contact Us</h1>
+            
+            <form name="contactUsForm" id="contactUs" action="#" onsubmit="return validateContact()" method="POST">
+            <fieldset>
+                <legend>Contact info</legend>
+                <p><label for="userName">Username:</label>
+                <input type="text"  name="uName" id="uName" value="" tabindex="1" /></p>
+                <br>
+                <p><label for="email">Email:</label>
+                <input type="email"  name="email" id="email" value="" tabindex="2" /></p>
+                <br>
+                <p><label for="telephone">Telephone:</label>
+                <input type="phone"  name="telephone" id="telephone" value="" tabindex="3" /></p>
+                <br>
+                <p><label for="comments">Comments (Max 250 characters):</label><br>
+                <textarea name="comments" id="comments" cols="30" rows="3" tabindex="4"></textarea></p>
+                <br>
+                <input type="submit" value="Submit" tabindex="5"/>
+            </fieldset>
+            </form>
+            <p class="failedContactSubmission">Please fill the required fields</p>
+            <p class="failedContactSubmission">Email not in proper format: "name@domain.com"</p>
+            <p class="failedContactSubmission">Phone number not in proper format: "402-111-2222"</p>
+            <p class="failedContactSubmission">Comments empty or too long.</p>
+        </main>
+        </div>
+        <footer>
+            <a href="default.html">Home</a> |
+            <a href="contact us.html">Contact Us</a> |
+            <a href="faq.html">FAQ</a> |
+            Copyright &copy; Cornfed Coworking 2016
+        </footer>
+    </div>
+    <script type="text/javascript" src="../JavaScript/validation.js"></script>
+    </body>
+</html>
