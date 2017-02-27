@@ -11,23 +11,20 @@
         $statement->bindValue(':email', $_POST['email']);
         $statement->execute();
         
-            $result = $statement->fetchAll();
-            foreach($result as $row)
-            {
+            $result = $statement->fetch();
                 $userInfo = array (
-                    "userSalutation" => $row["salutation"],
-                    "userFirstName" => $row["first_name"],
-                    "userLastName" => $row["last_name"],
-                    "userTelephone" => $row["telephone"],
-                    "userEmail" => $row["email"],
-                    "userName" => $row["user_name"],
-                    "userBirthDate" => $row["birth_date"],
-                    "userWorkStatus" => $row["work_status"],
-                    "userCompany" => $row["company"],
-                    "userRole" => $row["role"]
+                    "userSalutation" => $result["salutation"],
+                    "userFirstName" => $result["first_name"],
+                    "userLastName" => $result["last_name"],
+                    "userTelephone" => $result["telephone"],
+                    "userEmail" => $result["email"],
+                    "userName" => $result["user_name"],
+                    "userBirthDate" => $result["birth_date"],
+                    "userWorkStatus" => $result["work_status"],
+                    "userCompany" => $result["company"],
+                    "userRole" => $result["role"]
                     );
                 $_SESSION["userInfo"] = $userInfo;
-            }
         if($userInfo["userEmail"] != "" || $userInfo["userEmail"] != NULL)
         {
             header('Location: admin-view.php');

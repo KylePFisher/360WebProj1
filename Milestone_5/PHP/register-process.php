@@ -53,11 +53,11 @@
         
         if($statement->execute())
         {
-            $_SESSION["contactUsSQLSuccessful"] = true;
+            $_SESSION["registrationSQLSuccessful"] = true;
         }
         else
         {
-            $_SESSION["contactUsSQLSuccessful"] = false;
+            $_SESSION["registrationSQLSuccessful"] = false;
         }
         header('Location: register-view.php');
     }

@@ -28,7 +28,7 @@
                         <h1>Thank you for submitting your registration info!</h1>
                     </div>
                     <?php
-                    if ($_SESSION["contactUsSQLSuccessful"])
+                    if ($_SESSION["registrationSQLSuccessful"])
                     {
                         echo "<table>";
                             echo "<tr><td>Salutation:</td><td>" . $_SESSION['salutation'] . "</td></tr>";

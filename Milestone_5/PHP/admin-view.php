@@ -28,8 +28,6 @@
                         <?php echo "<h1>The user info for: ". $_SESSION['userInfo']["userFirstName"]. " " . $_SESSION['userInfo']["userLastName"] ."</h1>"?>
                     </div>
                     <?php
-                    // if ($_SESSION["contactUsSQLSuccessful"])
-                    // {
                         echo "<table>";
                             echo "<tr><td>Salutation:</td><td>" . $_SESSION['userInfo']["userSalutation"] . "</td></tr>";
                             echo "<tr><td>First Name:</td><td>" . $_SESSION['userInfo']["userFirstName"] . "</td></tr>";
@@ -46,9 +44,9 @@
                     ?>
                 </main>
         </div>
-                <?php
-                    include "includes/footer.inc.php";
-                ?>
+        <?php
+            include "includes/footer.inc.php";
+        ?>
         </div>
     </body>
 </html>
